@@ -1,0 +1,41 @@
+create database divulgacao;
+
+CREATE TABLE `divulgacao`.`estabelecimento` (
+`id` INT( 5 ) NOT NULL AUTO_INCREMENT ,
+`t1` varchar( 50 ) NOT NULL ,
+`t2` varchar( 50 ) NOT NULL ,
+`t3` varchar( 50 ) NOT NULL ,
+`t4` varchar( 50 ) NOT NULL ,
+`t5` varchar( 50 ) NOT NULL ,
+`t6` varchar( 50 ) NOT NULL ,
+`t7` varchar( 50 ) NOT NULL ,
+`t8` varchar( 50 ) NOT NULL ,
+`t9` varchar( 50 ) NOT NULL ,
+`logo` VARCHAR( 150 ) NOT NULL ,
+`nome` VARCHAR( 150 ) NOT NULL ,
+`local` VARCHAR( 150 ) NOT NULL ,
+`horario` VARCHAR( 5 ) NOT NULL ,
+`tel` VARCHAR( 12 ) NOT NULL ,
+`espec` VARCHAR( 500 ) NOT NULL ,
+PRIMARY KEY ( `id` ) 
+) ENGINE = MYISAM ;
+
+CREATE TABLE `divulgacao`.`usuarios` (
+`ID_usuarios` INT( 11 ) NOT NULL AUTO_INCREMENT ,
+`Nome` VARCHAR( 100 ) NOT NULL ,
+`Login` VARCHAR( 100 ) NOT NULL ,
+`Senha` VARCHAR( 30 ) NOT NULL ,
+`Email` VARCHAR( 60 ) NOT NULL ,
+`Ultimo_acesso` DATE NOT NULL ,
+`Status` VARCHAR( 255 ) NOT NULL ,
+PRIMARY KEY ( `ID_usuarios` ) 
+) ENGINE = MYISAM ;
+
+INSERT INTO usuarios( Nome, Login, Senha, Email, 
+STATUS ) value(
+'Juan',
+'juan',
+'123',
+'contato.juan@hotmail.com',
+'Ativo'
+)
