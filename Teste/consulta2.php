@@ -1,4 +1,4 @@
-///////<?PHP
+<?PHP
 include("./programacao/conexao.php");
 include ("./programacao/sql.php");
 
